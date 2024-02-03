@@ -8,8 +8,10 @@
       <sourceFolder url="file://$MODULE_DIR$/scenario1/tcpclient/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/scenario1/tcpserver/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezytutors/tutor-nodb/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/scenario1/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ezytutors/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

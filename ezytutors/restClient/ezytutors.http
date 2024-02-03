@@ -1,0 +1,18 @@
+### health check
+GET localhost:3000/health
+Accept: application/json
+
+
+### new course
+# curl -X POST localhost:3000/courses/ -H "Content-Type: application/json"
+#-d '{"tutor_id":1, "course_name":"Hello , my first course !"}'
+POST localhost:3000/courses/
+Content-Type: application/json
+
+{
+  "tutor_id": 1,
+  "course_name": "Hello , my first course!"
+}
+
+### page 74
+
