@@ -9,9 +9,12 @@
       <sourceFolder url="file://$MODULE_DIR$/scenario1/tcpserver/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ezytutors/tutor-nodb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ezytutors/tutor-db/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/scenario1/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/ezytutors/target" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/httpRequests" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
