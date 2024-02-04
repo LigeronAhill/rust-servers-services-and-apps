@@ -3,7 +3,7 @@ GET localhost:3000/health
 Accept: application/json
 
 
-### new course
+### new courses
 # curl -X POST localhost:3000/courses/ -H "Content-Type: application/json"
 #-d '{"tutor_id":1, "course_name":"Hello , my first course !"}'
 POST localhost:3000/courses/
@@ -14,5 +14,30 @@ Content-Type: application/json
   "course_name": "Hello , my first course!"
 }
 
-### page 74
 
+
+### 2
+POST localhost:3000/courses/
+Content-Type: application/json
+
+{
+  "tutor_id": 1,
+  "course_name": "Hello , my second course !"
+}
+
+### 3
+POST localhost:3000/courses/
+Content-Type: application/json
+
+{
+  "tutor_id": 1,
+  "course_name": "Hello , my third course !"
+}
+
+### get courses for tutor
+GET localhost:3000/courses/1
+Content-Type: application/json
+
+### get course detail for tutor
+GET localhost:3000/courses/1/2
+Content-Type: application/json
