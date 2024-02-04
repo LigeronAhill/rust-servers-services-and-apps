@@ -8,8 +8,6 @@ edition = "2021"
 [dependencies]
 # actix
 actix-web = "4.5.1"
-# env
-dotenv = "0.15.0"
 # db
 sqlx = { version = "0.7.3", default-features = false, features = ["postgres", "runtime-tokio-native-tls", "macros", "chrono"] }
 # serde
