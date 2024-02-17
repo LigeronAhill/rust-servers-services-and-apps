@@ -25,6 +25,6 @@ async fn main() -> io::Result<()> {
             .configure(course_routes)
             .configure(tutor_routes)
     };
-    let host_port = std::env::var("HOST_PORT").expect("HOST:PORT address is not set in .env file");
-    HttpServer::new(app).bind(&host_port)?.run().await
+    // let host_port = std::env::var("HOST_PORT").expect("HOST:PORT address is not set in .env file");
+    HttpServer::new(app).bind("127.0.0.1:3000")?.run().await
 }
