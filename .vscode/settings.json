@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ezy",
+            "database": "ezytutors",
+            "username": "postgres",
+            "password": "117133H8e3uFEZ&"
+        }
+    ]
+}

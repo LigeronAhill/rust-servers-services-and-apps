@@ -28,7 +28,7 @@ impl EzyTutorError {
                 println!("Not found error occurred: {:?}", msg);
                 msg.into()
             }
-            EzyTutorError::InvalidInput(_) => {
+            EzyTutorError::InvalidInput(msg) => {
                 println!("Invalid parameters received: {msg:?}");
                 msg.into()
             }

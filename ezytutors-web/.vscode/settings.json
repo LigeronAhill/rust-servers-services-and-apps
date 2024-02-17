@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        ".\\tutor-web-app-ssr\\Cargo.toml"
+    ]
+}

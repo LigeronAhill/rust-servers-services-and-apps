@@ -2,3 +2,4 @@
 .env
 /ezytutors/restClient
 .cargo
+ezytutors/target

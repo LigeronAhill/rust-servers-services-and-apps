@@ -1,9 +1,11 @@
+use actix_web::{web, App, HttpServer};
+use sqlx::PgPool;
 use std::io;
 use std::sync::Mutex;
-use actix_web::{App, HttpServer, web};
-use sqlx::PgPool;
-use tutor_db::routes::{course_routes, general_routes};
-use tutor_db::state::AppState;
+use tutor_web_service::{
+    routes::{course_routes, general_routes},
+    state::AppState,
+};
 
 #[actix_web::main]
 async fn main() -> io::Result<()> {
@@ -20,7 +22,6 @@ async fn main() -> io::Result<()> {
             .configure(general_routes)
             .configure(course_routes)
     };
-    let host_port = std::env::var("HOST_PORT").expect(
-        "HOST:PORT address is not set in .env file");
+    let host_port = std::env::var("HOST_PORT").expect("HOST:PORT address is not set in .env file");
     HttpServer::new(app).bind(&host_port)?.run().await
 }
